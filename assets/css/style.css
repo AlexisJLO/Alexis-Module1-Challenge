@@ -76,6 +76,8 @@ p {
 }
 
 .benefits {
+    display: flex;
+    flex-wrap: wrap;
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -130,3 +132,29 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+@media screen and (max-width: 992px) {
+    body {
+      width: calc(50% - 1rem);
+    }
+    .benifits {
+        width: calc(50% -irem);
+    }
+    head {
+        width: calc(50% -irem);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      width: 100%;
+    }
+    .benefits {
+        width: 100%;
+    }
+    head {
+        width: 100%;
+    }
+  }
+  
+  
